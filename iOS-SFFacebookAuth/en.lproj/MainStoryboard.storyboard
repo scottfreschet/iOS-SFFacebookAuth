@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="SFLogin" id="2" customClass="SFLogin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" image="Pix_FBLogin4.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Wd-bP-ai8">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fHG-qt-kP2"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XaQ-Lf-nvF" appends="YES" id="mOB-Lk-H79"/>
+                                </connections>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Gge-kA-V2k"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.039215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gge-kA-V2k" secondAttribute="bottom" constant="51" id="RVJ-10-ZeM"/>
+                            <constraint firstItem="5Wd-bP-ai8" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="XoS-mF-Ati"/>
+                            <constraint firstItem="Gge-kA-V2k" firstAttribute="centerX" secondItem="5Wd-bP-ai8" secondAttribute="centerX" type="default" id="hrZ-DU-oaV"/>
+                            <constraint firstAttribute="bottom" secondItem="5Wd-bP-ai8" secondAttribute="bottom" constant="29" id="nfe-5W-rPs"/>
+                            <constraint firstItem="5Wd-bP-ai8" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="sIu-NM-wus"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="xGesture_LoginTap" destination="XaQ-Lf-nvF" id="Wx9-76-duu"/>
+                        <outlet property="xSpinner" destination="Gge-kA-V2k" id="XuR-Zd-SQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XaQ-Lf-nvF">
+                    <connections>
+                        <action selector="loginTapped:" destination="2" id="EVf-vR-Ow1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+        <!--Application-->
+        <scene sceneID="0MW-uV-RsU">
+            <objects>
+                <viewController storyboardIdentifier="SFApplication" id="Dgl-QR-IQ2" customClass="SFApplication" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gt8-sG-8me">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjS-VB-9eg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="wY1-PO-nWi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrH-Wk-OTT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-SQ-WOa">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVB-AA-gjA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="userId:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSK-CV-tht">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zfM-ch-4ds"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="userName:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-me-ac8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="userGender:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMq-bl-0VK">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="userEmail:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-c6-rC9">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.039215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IMq-bl-0VK" firstAttribute="trailing" secondItem="Xs6-me-ac8" secondAttribute="trailing" type="default" id="4Jy-3C-1IK"/>
+                            <constraint firstItem="IMq-bl-0VK" firstAttribute="top" secondItem="Xs6-me-ac8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5Wy-kI-O4B"/>
+                            <constraint firstItem="Xs6-me-ac8" firstAttribute="top" secondItem="aSK-CV-tht" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CdO-DJ-yCa"/>
+                            <constraint firstItem="LqF-c6-rC9" firstAttribute="baseline" secondItem="qVB-AA-gjA" secondAttribute="baseline" type="default" id="GS6-K3-dac"/>
+                            <constraint firstItem="aSK-CV-tht" firstAttribute="top" secondItem="Gt8-sG-8me" secondAttribute="top" constant="74" id="H0L-5U-F9u"/>
+                            <constraint firstItem="jZh-SQ-WOa" firstAttribute="trailing" secondItem="qVB-AA-gjA" secondAttribute="trailing" type="default" id="IEr-Rd-GiJ"/>
+                            <constraint firstItem="KrH-Wk-OTT" firstAttribute="trailing" secondItem="jZh-SQ-WOa" secondAttribute="trailing" type="default" id="K9h-qb-SX0"/>
+                            <constraint firstItem="Xs6-me-ac8" firstAttribute="baseline" secondItem="KrH-Wk-OTT" secondAttribute="baseline" type="default" id="Mf8-fi-oOv"/>
+                            <constraint firstItem="LjS-VB-9eg" firstAttribute="trailing" secondItem="KrH-Wk-OTT" secondAttribute="trailing" type="default" id="TFx-ld-eSG"/>
+                            <constraint firstItem="KrH-Wk-OTT" firstAttribute="leading" secondItem="LjS-VB-9eg" secondAttribute="leading" type="default" id="cx1-VO-vxX"/>
+                            <constraint firstItem="IMq-bl-0VK" firstAttribute="baseline" secondItem="jZh-SQ-WOa" secondAttribute="baseline" type="default" id="dXM-zL-1aU"/>
+                            <constraint firstItem="IMq-bl-0VK" firstAttribute="leading" secondItem="LqF-c6-rC9" secondAttribute="leading" type="default" id="gHt-bw-vq5"/>
+                            <constraint firstItem="Xs6-me-ac8" firstAttribute="leading" secondItem="IMq-bl-0VK" secondAttribute="leading" type="default" id="heb-Cn-Lgx"/>
+                            <constraint firstItem="aSK-CV-tht" firstAttribute="leading" secondItem="Gt8-sG-8me" secondAttribute="leading" constant="9" id="l9k-pA-9tw"/>
+                            <constraint firstItem="LjS-VB-9eg" firstAttribute="leading" secondItem="Gt8-sG-8me" secondAttribute="leading" constant="113" id="nDK-d5-pvH"/>
+                            <constraint firstItem="LqF-c6-rC9" firstAttribute="top" secondItem="IMq-bl-0VK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pxm-lv-Vw3"/>
+                            <constraint firstItem="qVB-AA-gjA" firstAttribute="leading" secondItem="jZh-SQ-WOa" secondAttribute="leading" type="default" id="qdW-9W-7rM"/>
+                            <constraint firstItem="aSK-CV-tht" firstAttribute="baseline" secondItem="LjS-VB-9eg" secondAttribute="baseline" type="default" id="sdc-b2-73f"/>
+                            <constraint firstItem="Xs6-me-ac8" firstAttribute="leading" secondItem="aSK-CV-tht" secondAttribute="leading" type="default" id="tMc-mh-aLS"/>
+                            <constraint firstItem="LqF-c6-rC9" firstAttribute="trailing" secondItem="IMq-bl-0VK" secondAttribute="trailing" type="default" id="x2u-Tl-meT"/>
+                            <constraint firstItem="Xs6-me-ac8" firstAttribute="trailing" secondItem="aSK-CV-tht" secondAttribute="trailing" type="default" id="xBX-2D-hiA"/>
+                            <constraint firstItem="jZh-SQ-WOa" firstAttribute="leading" secondItem="KrH-Wk-OTT" secondAttribute="leading" type="default" id="xGo-bx-Eli"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FFC-G7-HSs"/>
+                    <connections>
+                        <outlet property="xLabel_UserEmail" destination="qVB-AA-gjA" id="eiB-aq-6lh"/>
+                        <outlet property="xLabel_UserGender" destination="jZh-SQ-WOa" id="YjR-zZ-P2d"/>
+                        <outlet property="xLabel_UserId" destination="LjS-VB-9eg" id="6GY-TH-gai"/>
+                        <outlet property="xLabel_UserName" destination="KrH-Wk-OTT" id="JKJ-NW-Nzq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7v0-DI-Hif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pix_FBLogin4.png" width="640" height="130"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
